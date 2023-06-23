@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Жанры</title>
+</head>
+<body>
+  <h1>Жанры</h1>
+  <ul>
+    {% for genre in genres %}
+      <li><a href="/genre/{{ genre.id }}/movies/">{{ genre.name }}</a></li>
+    {% endfor %}
+
+  </ul>
+</body>
+</html>
